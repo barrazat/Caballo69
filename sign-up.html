@@ -6,96 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registrarse</title>
     <link rel="stylesheet" href="css/sign-up-style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" media="screen and (max-width:710px)" href="css/phone.css">
     
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contáctanos</a></li>
-            <li><a href="sign-up.html">Registrar</a></li>
-            <li id="search-rigth"><input id="search-in" type="text" placeholder="Buscar.."></li>
-          </ul>
-    </nav>
-
-    <div class="sign-up-container">
-        <form onsubmit="validate()" action"#">
-
-            <h2> REGISTRO</h2>
-            <input type="text" maxlength="30" minlength="2" id="txtcorreo" placeholder="Ingrese Correo" required/>
-             
-            <input  type="text"  maxlength="12" minlength="9" id="txtRut" onkeyup="modifyText()" placeholder="Ingrese Rut" required/>
-            
-            <input  type="text" maxlength="40" id="txtName" minlength="10" placeholder="Ingrese Nombre completo " required/>
-            
-            <label for="Fecha">Fecha de Nacimiento </label>
-            <input  id="Fecha" type="date" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" required/>
-            
-            <input id="txtNumero" maxlength ="9" minlength="8" placeholder="Ingrese Telefono" required/>
-        
-        
-            <label for="txtRegion">Region:</label>
-            <select id="txtRegion" oninput="selectCity()">     
-            </select>
-            
-            <br>
-            
-            <label for="txtCiudad">Ciudad:</label>
-             <select id="txtCity"></select>
-             
-            <br>
-            
-            <label for="txtTipoDeVivienda">Tipo de vivienda: </label>
-            <select id="txtTipoDeVivienda">
-                <option>Casa con patio grande</option>
-                <option>Casa con patio pequeño</option>
-                <option>Casa sin patio</option>
-                <option>Departamento</option>
-            </select>
-            
-            <button id="sign-up-btn">REGISTRAR</button>
-            
-            
-            <script src="js/RyC.js"></script>
-            <script src="main.js"></script>
-            
-            
-        </form>
-    </div>
-    
-    
-    <footer>
-            <table class="foot-box">
-                <tr>
-                    <td>Email</td>
-                    <td>
-                        <a href="mailto:misperris@misperris.com">
-                            misperris@misperris.com
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Teléfono</td>
-                    <td>
-                        <a href="tel:+569123456789">
-                            +56 123456789
-                        </a>
-                    </td>
-                </tr>
-            </table>
-    
-            <table class="foot-box">
-                <tr>
-                    <td>Dirección</td>
-                    <td>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.261529953386!2d-70.75238091284422!3d-33.51177855973648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcd1fe0c7bab%3A0x4d17b82a7ba77488!2sDuoc+UC%3A+Sede+Maipu!5e0!3m2!1ses-419!2scl!4v1535071987531" id = "maps" allowfullscreen></iframe></td>
-                </tr>
-            </table>
-            <p id="horse">&copy; Todos los derechos reservados - Caballo 69</p>
-        </footer>
+   <div class="contenedor-form">
+       <div class="toggle">
+           <span >Crear Cuenta</span>
+       </div>
+       <div class="formulario">
+           <h2>Iniciar Sesión</h2>
+           <form action="#">
+               <input type="text" placeholder="Usuario" required>
+               <input type="password" placeholder="Contraseña" required>
+               <input type="submit" value="Iniciar Sesión">
+           </form>
+       </div>
+       <div class="formulario">
+           <h2>Crear Cuenta</h2>
+           <form action="#">
+               <input type="text" id="nombre" placeholder="Nombre" required>
+               <input type="text" id="apellido" placeholder="Apellido" required>
+               <input type="email" id="correo" placeholder="Correo" required>
+               <input type="text" id="rut" maxlength="12" minlength="9" placeholder="RUT">
+               <input type="number" id="telefono" maxlength="9" minlenght="9" placeholder="Telefono">
+               <input type="text" id="usuario" placeholder="Usuario" required>
+               <input type="password" id="contraseña" placeholder="Contraseña" required>
+               <label >Fecha de nacimiento </label> <br>
+               <input type="date" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" required> <br>
+               <label for="txtRegion">Region:</label>
+               <select id="txtRegion" oninput="selectCity()"></select>
+               <br>
+               <label for="txtCity">Ciudad:</label>
+               <select id="txtCity"></select>
+               <br>
+               <label for="txtTipoVivienda">Tipo vivienda</label>
+                <select id="txtTipoVivienda">
+                    <caption> Casa con patio grande</caption>
+                    <caption> Casa con patio pequeño</caption>
+                    <caption> Casa sin patio</caption>
+                    <caption> Departamento</caption>
+                </select><br>
+               <input type="submit" value="Registrarse">
+           </form>
+       </div>
+       <div class="reset-password">
+           <a href="#">Olvide mi contraseña</a>
+       </div>
+   </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/sign-up.js"></script>
+     <script src="js/RyC.js"></script>
 </body>
 </html>

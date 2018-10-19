@@ -1,147 +1,153 @@
-@font-face{
-    font-family: "title";
-    src: url("SourceSansPro-Regular.ttf");
-}
-
-html{
-    height: 100%;
-    margin:0;
-}
-
-body{
-    font-family: "title";
-    font-display: auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+*{
     margin: 0;
-    font-size: 18px;
+    padding: 0;
 }
 
-form {
+.contenedor-form{
+
+    background: rgba(0,0,0,0.7);
+    width: 100%;
     max-width: 500px;
-    width: 100%;
-    margin: 0   auto;
-    background: rgba(0,0,0,0.4);
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 48px auto;
     border-radius: 5px;
+    color: #fff;
+    position: relative;
+    /*padding: 50px;*/
+}
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
     text-align: center;
+    border-top: 2px solid #FFC300;
+    border-bottom: 2px solid #FFC300;
+    transition: all .5s ;
+    cursor: pointer;
+}
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+    
+}
+.contenedor-form .toggle:hover{
+    border-top: 2px solid #C70039;
+    border-bottom: 2px solid #C70039;
 }
 
-h2 {
-    color:aliceblue;
-    text-align: center;
-    margin:0 auto;
-    font-size: 30px;
-}
-
-label {
-    color: aliceblue;
-    text-align: center;
+.contenedor-form h2{
+    margin: 0 0 28px 0;
     font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+}
+.contenedor-form label {
+   margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1; 
 }
 
-input {
-    margin: 0 auto;
-    max-width: 450px;
+
+/*
+#nombre, #apellido {
+    outline: none;
+    display: block;
     width: 100%;
-    margin-bottom: 15px;
-    padding: 2px;
+    padding: 10px 15px;
+}
+*/
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"],
+.contenedor-form input[type="number"],
+.contenedor-form input[type="date"]{
+    outline: none;
+    background: rgba(0,0,0,0.5);
+    display: block;
+    width: 100%;
+    padding: 10px 1px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #FFC300;
     box-sizing: border-box;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    transition: all .5s;
+}
+
+.contenedor-form input[type="text"]:hover,
+.contenedor-form input[type="password"]:hover,
+.contenedor-form input[type="email"]:hover,
+.contenedor-form input[type="number"]:hover,
+.contenedor-form input[type="date"]:hover{
+    border-bottom: 4px solid #C70039;
+}
+#txtRegion {
+    background: rgba(0,0,0,0.5);
+    display: block;
+    width: 100%;
+    padding: 7px ;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    
+}
+#txtCity {
+    background: rgba(0,0,0,0.5);
+    display: block;
+    width: 100%;
+    padding: 7px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+}
+#txtTipoVivienda {
+     background: rgba(0,0,0,0.5);
+    display: block;
+    width: 100%;
+    padding: 7px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal; 
+}
+.contenedor-form input[type="submit"]{
+    background: #FFC300;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .7s;
+}
+.contenedor-form input[type="submit"]:hover{
+    background: #C70039;
+}
+.contenedor-form .reset-password {
+    background: #3365FF;
+    width: 100%;
+    padding: 15px 0 ;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.contenedor-form .reset-password a{
+    color: white;
+    text-decoration: none;
     font-size: 16px;
 }
-
-select {
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 3px;
+.contenedor-form .formulario {
+    padding: 40px;
+    display: none;
 }
-
-#Fecha{
-    text-align: center;
-}
-
-#sign-up-btn{
-    max-width: 250px;
-    width: 100%;
-    margin: 0 auto;
-    background: #31384A;
-    color: #fff;
-    padding: 15px;
-    margin-top: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-@media (max-width:530px) {
-    form,input,select,button{
-        width: 90%;
-    }
-}
-
-.sign-up-container {
-    margin:  0 auto;
-    margin-top: 80px;
-    margin-bottom: 200px;
-}
-
-main {
-    background-color: white;
-    width: 100%;
-    /*padding-top: 10px;*/ /*espacio arriba*/
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%
-}
-
-nav{
-    background-color: #252629;
-    width: 100%;
-}
-
-footer{
-    background-color:   #343434;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    color: white;
-}
-
-footer a {
-    color:#EC5504;
-    text-decoration: none;
-}
-
-.content-box{
-    text-align: justify;
-}
-
-.foot-box{
-    width: 50%
-}
-
-#maps{
-    max-width: 500px;
-    width:100%;
-    margin: 0 auto;
-    display:block;
-    max-height: 80px;
-    frameborder:0;
-    border:0;
-}
-
-#search-in{
-    width:150px;
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-}
-
-#search-rigth{
-    float:right;
+.contenedor-form .formulario:nth-child(2){
+    display: block;
 }
