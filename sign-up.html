@@ -9,66 +9,67 @@
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" media="screen and (max-width:775px)" href="css/phone.css">
-    
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Quienes somos</a></li>
             <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contáctanos</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
             <li><a href="sign-up.html">Registrar</a></li>
             <li id="search-rigth"><input id="search-in" type="text" placeholder="Buscar.."></li>
           </ul>
     </nav>
-
-    <div class="contenedor-form">
-        <div class="toggle">
+    
+    
+   <div class="contenedor-form">
+       <div class="toggle">
            <span >Crear Cuenta</span>
-        </div>
-        <div class="formulario">
+       </div>
+       <div class="formulario">
            <h2>Iniciar Sesión</h2>
            <form action="#">
                <input type="text" placeholder="Usuario" required>
                <input type="password" placeholder="Contraseña" required>
-               <button type=button>Iniciar Sesión</button>
+               <input type="submit" value="Iniciar Sesión">
            </form>
-        </div>
-        <div class="formulario">
-            <h2>Crear Cuenta</h2>
-            <form action="#">
-                <input type="text" id="nombre" placeholder="Nombre" required>
-                <input type="text" id="apellido" placeholder="Apellido" required>
-                <input type="email" id="correo" placeholder="Correo" required>
-                <input type="text" id="rut" maxlength="12" minlength="9" placeholder="RUT">
-                <input type="number" id="telefono" maxlength="9" minlenght="9" placeholder="Telefono">
-                <input type="text" id="usuario" placeholder="Usuario" required>
-                <input type="password" id="contraseña" placeholder="Contraseña" required>
-                <label >Fecha de nacimiento </label> <br>
-                <input type="date" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" required> <br>
-                <label for="txtRegion">Region:</label>
-                <select id="txtRegion" oninput="selectCity()"></select>
-                <br>
-                <label for="txtCity">Ciudad:</label>
-                <select id="txtCity"></select>
-                <br>
-                <label for="txtTipoVivienda">Tipo vivienda</label>
-                    <select id="txtTipoVivienda">
-                        <caption> Casa con patio grande</caption>
-                        <caption> Casa con patio pequeño</caption>
-                        <caption> Casa sin patio</caption>
-                        <caption> Departamento</caption>
-                    </select><br>
-                <button type="button">Registrarse</button>
-            </form>
-        </div>
-        <div class="reset-password">
-            <a href="#">Olvide mi contraseña</a>
-        </div>
-    </div>
-
-    <footer>
+       </div>
+       <div class="formulario">
+           <h2>Crear Cuenta</h2>
+           <form action="#">
+               <input type="text" id="nombre" placeholder="Nombre" required>
+               <input type="text" id="apellido" placeholder="Apellido" required>
+               <input type="email" id="correo" placeholder="Correo" required>
+               <input type="text" id="rut" maxlength="12" minlength="9" placeholder="RUT">
+               <input type="number" id="telefono" maxlength="9" minlenght="9" placeholder="Telefono">
+               <input type="text" id="usuario" placeholder="Usuario" required>
+               <input type="password" id="contraseña" placeholder="Contraseña" required>
+               <label >Fecha de nacimiento </label> <br>
+               <input type="date" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" required> <br>
+               <label for="txtRegion">Region:</label>
+               <select id="txtRegion" oninput="selectCity()"></select>
+               <br>
+               <label for="txtCity">Ciudad:</label>
+               <select id="txtCity"></select>
+               <br>
+               <label for="txtTipoVivienda">Tipo vivienda</label>
+                <select id="txtTipoVivienda">
+                    <caption> Casa con patio grande</caption>
+                    <caption> Casa con patio pequeño</caption>
+                    <caption> Casa sin patio</caption>
+                    <caption> Departamento</caption>
+                </select><br>
+               <input type="submit" value="Registrarse">
+           </form>
+       </div>
+       <div class="reset-password">
+           <a href="#">Olvide mi contraseña</a>
+       </div>
+   </div>
+   
+      
+       <footer>
         <table class="foot-box">
             <tr>
                 <td>Email</td>
@@ -97,9 +98,9 @@
         </table>
         <p id="horse">&copy; Todos los derechos reservados - Caballo 69</p>
     </footer>
-
+    
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/sign-up.js"></script>
-    <script src="js/RyC.js"></script>
+     <script src="js/RyC.js"></script>
 </body>
 </html>

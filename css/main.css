@@ -10,7 +10,6 @@ body{
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
-    font-size: 18px;
 }
 
 p,h2,h3 {
@@ -40,12 +39,6 @@ main {
     /*padding-top: 10px;*/ /*espacio arriba*/
     display: flex;
     flex-wrap: wrap;
-    width: 100%
-}
-
-nav{
-    background-color: #252629;
-    width: 100%;
 }
 
 footer{
