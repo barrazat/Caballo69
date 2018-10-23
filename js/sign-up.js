@@ -6,3 +6,5 @@ $('.toggle').click(function(){
         opacity: 'toggle'
     }, "slow");
 });
+
+

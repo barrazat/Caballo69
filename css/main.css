@@ -42,11 +42,13 @@ main {
 }
 
 footer{
-    background-color:   #343434;
+    background-color:  rgb(0,0,0,0.8);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     color: white;
+
+  
 }
 
 footer a {

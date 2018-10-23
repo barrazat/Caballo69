@@ -23,7 +23,7 @@
     </nav>
     
     
-   <div class="contenedor-form">
+   <div class="contenedor-form" id="formInicio">
        <div class="toggle">
            <span >Crear Cuenta</span>
        </div>
@@ -32,35 +32,41 @@
            <form action="#">
                <input type="text" placeholder="Usuario" required>
                <input type="password" placeholder="Contraseña" required>
-               <input type="submit" value="Iniciar Sesión">
+               <input type="submit" id="iniciar"
+               value="Iniciar Sesión">
            </form>
        </div>
-       <div class="formulario">
+       <div class="formulario" id="formRegistro">
            <h2>Crear Cuenta</h2>
            <form action="#">
-               <input type="text" id="nombre" placeholder="Nombre" required>
-               <input type="text" id="apellido" placeholder="Apellido" required>
-               <input type="email" id="correo" placeholder="Correo" required>
-               <input type="text" id="rut" maxlength="12" minlength="9" placeholder="RUT">
-               <input type="number" id="telefono" maxlength="9" minlenght="9" placeholder="Telefono">
-               <input type="text" id="usuario" placeholder="Usuario" required>
-               <input type="password" id="contraseña" placeholder="Contraseña" required>
+               <input type="text" id="nombre" placeholder="Nombre" >
+               <input type="text" id="apellido" placeholder="Apellido" >
+               <input type="email" id="correo" placeholder="Correo" >
+            <input type="text" id="rut" placeholder="RUT" >
+               <input type="text" id="telefono" maxlength="9" minlenght="9" placeholder="Telefono" >
+               <input type="text" id="usuarioNuevo" placeholder="Usuario" >
+               <input type="password" id="contraseñaNuevo" placeholder="Contraseña" >
                <label >Fecha de nacimiento </label> <br>
-               <input type="date" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" required> <br>
+               <input type="date" id="nacimiento" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" > <br>
                <label for="txtRegion">Region:</label>
                <select id="txtRegion" oninput="selectCity()"></select>
                <br>
                <label for="txtCity">Ciudad:</label>
                <select id="txtCity"></select>
                <br>
+               
                <label for="txtTipoVivienda">Tipo vivienda</label>
                 <select id="txtTipoVivienda">
-                    <caption> Casa con patio grande</caption>
-                    <caption> Casa con patio pequeño</caption>
-                    <caption> Casa sin patio</caption>
-                    <caption> Departamento</caption>
+                    <option> ---------------</option>
+                    <option> Casa con patio grande</option>
+                    <option> Casa con patio pequeño</option>
+                    <option> Casa sin patio</option>
+                    <option> Departamento</option>
                 </select><br>
-               <input type="submit" value="Registrarse">
+                
+                
+               <input type="submit" id="registrar" value="Registrarse">
+               
            </form>
        </div>
        <div class="reset-password">
@@ -101,6 +107,7 @@
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/sign-up.js"></script>
-     <script src="js/RyC.js"></script>
+     <script src="js/Regiones.js"></script>
+     <script src="js/validarRegistro.js"></script>
 </body>
 </html>

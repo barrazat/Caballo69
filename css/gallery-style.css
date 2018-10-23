@@ -11,12 +11,18 @@ body{
     width: 100%;
     margin: 0;
     font-size: 18px;
+    background: url(../img/negro2.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
     width: 100%;
     text-align: center;
     font-size: 32px;
+}
+header h1 {
+    color: white;
 }
 
 .galeria {
@@ -34,7 +40,7 @@ header{
 	width: 50%;
 	margin: 0 auto;
 	border-radius: 5px;
-	box-shadow: 0 0 7px 0 rgba(0,0,0,0.9);
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
 	overflow: hidden;
 	margin-bottom: 30px;
 } 
@@ -50,7 +56,7 @@ header{
 
 figure {
 	width: 300px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.5);
 	margin: 10px 0;
 	border: 1px solid #777;
 	box-sizing: border-box;
@@ -77,7 +83,7 @@ nav{
 }
 
 footer{
-    background-color: #343434;
+    background-color: rgb(0,0,0,0.8);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
