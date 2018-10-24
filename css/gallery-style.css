@@ -11,7 +11,7 @@ body{
     width: 100%;
     margin: 0;
     font-size: 18px;
-    background: url(../img/negro2.png);
+    background: url(../img/negro2.png) center;
     background-size: cover;
     background-attachment: fixed;
 }

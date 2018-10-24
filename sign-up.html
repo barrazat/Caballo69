@@ -32,20 +32,20 @@
            <form action="#">
                <input type="text" placeholder="Usuario" required>
                <input type="password" placeholder="Contraseña" required>
-               <input type="submit" id="iniciar"
-               value="Iniciar Sesión">
+               <button type="button" name="iniciar" id="iniciar" >Iniciar sesion</button>
            </form>
        </div>
        <div class="formulario" id="formRegistro">
            <h2>Crear Cuenta</h2>
            <form action="#">
-               <input type="text" id="nombre" placeholder="Nombre" >
-               <input type="text" id="apellido" placeholder="Apellido" >
+               <input type="text" id="nombres" placeholder="Nombre y Apellido" >
                <input type="email" id="correo" placeholder="Correo" >
-            <input type="text" id="rut" placeholder="RUT" >
-               <input type="text" id="telefono" maxlength="9" minlenght="9" placeholder="Telefono" >
+            <input type="text" id="rut" placeholder="RUT">
+               <input type="text" id="telefono"  placeholder="Telefono" >
                <input type="text" id="usuarioNuevo" placeholder="Usuario" >
                <input type="password" id="contraseñaNuevo" placeholder="Contraseña" >
+              <!-- <input type="password" id="contraseñaNuevo2" placeholder="Confirmar contraseña" > 
+              -->
                <label >Fecha de nacimiento </label> <br>
                <input type="date" id="nacimiento" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" > <br>
                <label for="txtRegion">Region:</label>
@@ -65,12 +65,12 @@
                 </select><br>
                 
                 
-               <input type="submit" id="registrar" value="Registrarse">
+               <button type="button" name="enviar" id="enviar" >Registrarse</button>
                
            </form>
        </div>
        <div class="reset-password">
-           <a href="#">Olvide mi contraseña</a>
+           <button type="button" name="btn-olvide" id="btn-olvide" >Olvide mi contraseña</button>
        </div>
    </div>
    
